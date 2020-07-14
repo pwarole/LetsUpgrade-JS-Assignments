@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>This is 1st JS Assignment</title>
+    </head>
+    <body>
+        <h1>Today is :<p id="day"></p></h1>
+        <h1>Current time is :<p id="times"></p></h1>
+        <script>
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            
+            var d = new Date();
+            document.getElementById('day').innerHTML=weekday[d.getDay()];
+            var amOrpm = (d.getHours()<12)?"AM":"PM";
+            var hour = (d.getHours()<12)?d.getHours():d.getHours()-12;
+            var final_time = hour+" "+amOrpm+": "+d.getMinutes()+": "+d.getSeconds();
+            document.getElementById('times').innerHTML = final_time;
+        </script>
+    </body>
+
+</html>

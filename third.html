@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>This is 3rd JS Assignment</title>
+    </head>
+    <body>
+        <h2>1]Date in (mm-dd-yyyy) format:<p id="one"></p></h2>
+        <h2>2]Date in (dd-mm-yyyy) format:<p id="two"></p></h2>
+        <h2>3]Date in (mm/dd/yyyy) format:<p id="three"></p></h2>
+        <h2>4]Date in (dd/mm/yyyy) format:<p id="four"></p></h2>
+        <script>
+            let curdate = new Date();
+            let formatted_date_1 = (curdate.getMonth()+1)+"-"+curdate.getDay()+"-"+curdate.getFullYear();
+            let formatted_date_2 = curdate.getDay()+"-"+(curdate.getMonth()+1)+"-"+curdate.getFullYear(); 
+            let formatted_date_3 = (curdate.getMonth()+1)+"/"+curdate.getDay()+"/"+curdate.getFullYear();
+            let formatted_date_4 = curdate.getDay()+"/"+(curdate.getMonth()+1)+"/"+curdate.getFullYear();
+            document.getElementById('one').innerHTML=formatted_date_1;
+            document.getElementById('two').innerHTML=formatted_date_2;
+            document.getElementById('three').innerHTML=formatted_date_3;
+            document.getElementById('four').innerHTML=formatted_date_4;
+            
+            
+            
+        </script>
+    </body>
+
+</html>
