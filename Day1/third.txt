@@ -1,0 +1,23 @@
+Q.3 Write a brief introduction on available data types in javascript 
+ There are mainly three types of data types in javascript Number,String,Objects.
+
+1.Numbers - This consists of numeric data inside a variable.
+eg -var x = 16
+ 
+2.String - This consist of String type data in variable
+eg- var name = "pawan";
+
+3.booleans - Javascript have boolean data type consist only two values True and False
+eg . boolean f = false;
+
+4.Arrays - JavaScript arrays are written with square brackets.Array items are separated by commas.
+
+eg . var num = [1,2,3,4,5,6];
+
+5.Objects - JavaScript objects are written with curly braces {}.Object properties are written as name:value pairs, separated by commas.
+eg. - var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+5.Undefined - In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+eg - var car;
+
+ 

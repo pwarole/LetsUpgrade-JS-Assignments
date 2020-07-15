@@ -1,0 +1,30 @@
+Q1. Explore and Explain The various methods of cosole function
+1.]console.log();
+	This console Function is use to print the output to console
+	It can Handle all types of datatype.
+
+2.]consol.error("This code contains error"); - 
+	This method is use to log error message in console.This is use during debugging.It show error and highlight the text in red color.
+
+3.]console.warn("This is Warning"); - 
+	This function is use to log warning message to cosole.It shows warining in Yellow Color.
+
+4.] console.clear() - 
+	This function is used to clear the colsole.It will clear all the output present in console.
+
+5.] console.time() & console.timeEnd() - 
+	This functions are used to show time taken by code in console.
+
+6.] console.table({a,b,c}); - 
+	This fucntion is used to display output in Table Fashion inside console.The input must be array or object.
+
+7.]console.count() -
+	This method is used to count the number that the function hit by this counting method.
+
+8.]console.group() and console.groupEnd() - 
+	This funcntion methods of the console object allows us to group contents in a separate block, which will be indented.
+
+9.]Custom Console Logs
+	This function is used to add CSS styles inside console.
+	e.g. - console.lop("%c Custom Meassge",'color:blue');
+

@@ -1,0 +1,40 @@
+Q2. Explain difference between var let and const >
+
+A.]var  - 
+1. It is a Keyword used to declare variable
+2. It gives variable to allows global scope
+
+Example
+
+var a = 12; //Global scope
+var b = 24;
+
+var z = a+b;
+console.log(z);
+
+B.]let -
+1.This keyword is used to declare variable inside curly braces.
+2.This variable is local scope
+3.We can give same name to variable in let that it only have its scope inside local block 
+
+Example - 
+{
+  let a = 25;  //local scope
+  console.log(a);
+}
+
+
+C.]const - 
+1.This keyword is used to declare variable which is const type.
+2.It cannot be changed
+3.Assign values during declaration only.
+//
+
+const fruits = ["apple","mango"]
+console.log(fruits);
+fruits.push("banana");// It wil get add in fruits array No error
+console.log(fruits);
+
+but if we try to add fruits through array
+fruits = [ "banana","pineapple","watermelon"];
+This will Give Error
