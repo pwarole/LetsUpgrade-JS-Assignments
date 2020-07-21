@@ -1,0 +1,29 @@
+<html>
+<head>
+      <title>Day 5 JS Assignments</title>
+     <h1>Assignment1</h1>
+    </head>
+<body>
+<script>
+       var arr=[];
+       var i;
+       var n=prompt("Enter No of Elemnts:");
+         for(i=0;i<n;i++)
+         {
+         arr[i]=prompt("Enter a Positive no");
+         }
+         var numbers=arr.map((el)=>el);
+         console.log("Array of Positive Numbers are : ",numbers);
+         var oddno=arr.filter(function(el)
+         {
+             if(el%2!=0)
+             {
+                 return el;
+             }
+         })
+         console.log("Array of Odd Numbers are : ",oddno);
+         var cubes=oddno.map(el=>el**3);
+         console.log("The Array of Cubes are : ",cubes);
+         </script>
+         </body>
+         </html>
