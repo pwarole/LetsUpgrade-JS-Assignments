@@ -1,0 +1,39 @@
+ 
+<html>
+    <head>
+          <title>Day 6 JS Assignment 3</title>
+        </head>
+    <body>
+     <h1>Day 6 Assignment 3 -<br>Display welcome User and Clock</h1>
+     <button type="button" onClick="start()">Clock</button>
+     <button type="button" onclick="changeBG()">DarkMode</button>
+      <script>
+          document.write("<br/>");
+          let name=prompt("Enter your Name:");
+          document.write("<h1 style='color:Maroon;font-size:100px;'>Welcome ",name,"</h1>");
+          function start() {
+              var current=new Date();
+              var hour=current.getHours();
+              var min=current.getMinutes();
+              var sec=current.getSeconds();
+              min=checkTime(min);
+              sec=checkTime(sec);
+              document.getElementById('txt').innerHTML=hour + ":"+min+":"+sec;
+              var time=setTimeout(start,600);
+          }
+          function checkTime(i)
+          {
+              if(i<10)
+              {
+                  i="0"+i;
+              }
+              return i;
+          }
+
+          function changeBG(){
+            document.bgColor="black";
+          }
+       </script>
+         <div id="txt" style="color:chocolate;font-size: 100px;"></div>
+          </body>
+          </html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+      <title>Day 6 JS Assignment 1</title>
+    </head>
+<body>
+    <h1>
+        Day 6 Assignment No - 1<br>
+      Changing Background in 5 Seconds
+    </h1>
+  <script>
+      //document.write("open console box for output");
+      var colours=['Red','Green','Yellow','Blue','Pink'];
+      function change() {
+          setTimeout(function colorchange() {
+              document.bgColor=colours.shift();
+              if(colours.length)
+              {
+                setTimeout(colorchange,5000);
+              }
+          },5000);
+      }
+          function start()
+          {
+             setInterval(change(),5000); 
+          }
+      start()
+      </script>
+        
+        </body>
+        </html>
+           
